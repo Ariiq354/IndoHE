@@ -1,0 +1,102 @@
+---
+import Clock from "../assets/Clock.astro";
+import Envelope from "../assets/Envelope.astro";
+import MailBulkIcon from "../assets/MailBulkIcon.astro";
+import MapMarker from "../assets/MapMarker.astro";
+import Phone from "../assets/Phone.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact">
+  <div>
+    <div class="w-full bg-black">
+      <div class="container py-4 text-4xl text-white">Contact Us</div>
+    </div>
+    <div class="container flex flex-col gap-4 py-12 text-lg md:flex-row">
+      <div class="flex flex-col gap-4">
+        <div class="group flex gap-4">
+          <div
+            class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-green-500"
+          >
+            <div
+              class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-green-500"
+            >
+            </div>
+            <MailBulkIcon />
+          </div>
+          <div class="flex flex-col">
+            <h1 class="mb-4 text-2xl font-bold text-red-500">Address</h1>
+            <p>P.O Box 68563-00610, Nairobi</p>
+          </div>
+        </div>
+        <div class="group flex gap-4">
+          <div
+            class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-green-500"
+          >
+            <div
+              class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-green-500"
+            >
+            </div>
+            <MapMarker />
+          </div>
+          <div class="flex flex-col">
+            <h1 class="mb-4 text-2xl font-bold text-red-500">Visit us</h1>
+            <p>
+              Regal Plaza , 1st Floor, Next to Rubis Petrol Station Limuru Road,
+              Nairobi-Kenya
+            </p>
+          </div>
+        </div>
+        <div class="group flex gap-4">
+          <div
+            class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-green-500"
+          >
+            <div
+              class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-green-500"
+            >
+            </div>
+            <Phone />
+          </div>
+          <div class="flex flex-col">
+            <h1 class="mb-4 text-2xl font-bold text-red-500">Call Us</h1>
+            <p>(+254) 722 235833 <br /> (+254) 721 219235</p>
+          </div>
+        </div>
+        <div class="group flex gap-4">
+          <div
+            class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-green-500"
+          >
+            <div
+              class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-green-500"
+            >
+            </div>
+            <Envelope />
+          </div>
+          <div class="flex flex-col">
+            <h1 class="mb-4 text-2xl font-bold text-red-500">Email Address</h1>
+            <p>info@educationaustralia.co.ke</p>
+          </div>
+        </div>
+        <div class="group flex gap-4">
+          <div
+            class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-green-500"
+          >
+            <div
+              class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-green-500"
+            >
+            </div>
+            <Clock />
+          </div>
+          <div class="flex flex-col">
+            <h1 class="mb-4 text-2xl font-bold text-red-500">Working Hours</h1>
+            <p>
+              <b class="font-bold">Monday to Friday</b> &ndash; 8:30am to 4:30pm
+              <b class="font-bold">Sunday and public holidays</b> &ndash; Closed
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>halo</div>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,48 @@
+---
+import "@fontsource/montserrat";
+const currentPath = Astro.url.pathname;
+---
+
+<div class="montserrat container flex items-center justify-between">
+  <a href="/">
+    <img src="/logo.webp" alt="" />
+  </a>
+  <nav class="flex gap-5 text-lg font-bold">
+    <a
+      href="/"
+      class={`hover:text-blue-900 ${currentPath === "/" ? "text-blue-900" : ""}`}
+    >
+      Home
+    </a>
+    <a
+      href="/about"
+      class={`hover:text-blue-900 ${currentPath === "/about" ? "text-blue-900" : ""}`}
+    >
+      About Us
+    </a>
+    <a
+      href="/services"
+      class={`hover:text-blue-900 ${currentPath === "/services" ? "text-blue-900" : ""}`}
+    >
+      Services
+    </a>
+    <a
+      href="/university"
+      class={`hover:text-blue-900 ${currentPath === "/university" ? "text-blue-900" : ""}`}
+    >
+      Universities
+    </a>
+    <a
+      href="/contact"
+      class={`hover:text-blue-900 ${currentPath === "/contact" ? "text-blue-900" : ""}`}
+    >
+      Contacts
+    </a>
+  </nav>
+</div>
+
+<style>
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+</style>
