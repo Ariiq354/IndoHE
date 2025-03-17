@@ -1,44 +1,58 @@
 ---
+import MobileNav from "@/components/MobileNav.tsx";
 import "@fontsource/montserrat";
 const currentPath = Astro.url.pathname;
+
+import LangMenu from "@/components/LangMenu";
+import { getLangFromUrl, useTranslations } from "@/lib/i8n.ts";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class="montserrat container flex items-center justify-between">
-  <a href="/">
+  <a href="/" class="w-[50%] md:w-fit">
     <img src="/logo.webp" alt="" />
   </a>
-  <nav class="flex gap-5 text-lg font-bold">
-    <a
-      href="/"
-      class={`hover:text-blue-900 ${currentPath === "/" ? "text-blue-900" : ""}`}
-    >
-      Home
-    </a>
-    <a
-      href="/about"
-      class={`hover:text-blue-900 ${currentPath === "/about" ? "text-blue-900" : ""}`}
-    >
-      About Us
-    </a>
-    <a
-      href="/services"
-      class={`hover:text-blue-900 ${currentPath === "/services" ? "text-blue-900" : ""}`}
-    >
-      Services
-    </a>
-    <a
-      href="/university"
-      class={`hover:text-blue-900 ${currentPath === "/university" ? "text-blue-900" : ""}`}
-    >
-      Universities
-    </a>
-    <a
-      href="/contact"
-      class={`hover:text-blue-900 ${currentPath === "/contact" ? "text-blue-900" : ""}`}
-    >
-      Contacts
-    </a>
-  </nav>
+  <div class="flex gap-4">
+    <nav class="hidden gap-5 text-lg font-medium md:flex">
+      <a
+        href={getRelativeLocaleUrl(lang, "/")}
+        class={`hover:text-blue-900 ${currentPath === "/" ? "text-blue-900" : ""}`}
+      >
+        {t("nav.home")}
+      </a>
+      <a
+        href={getRelativeLocaleUrl(lang, "/about")}
+        class={`hover:text-blue-900 ${currentPath === "/about" ? "text-blue-900" : ""}`}
+      >
+        {t("nav.about")}
+      </a>
+      <a
+        href={getRelativeLocaleUrl(lang, "/services")}
+        class={`hover:text-blue-900 ${currentPath === "/services" ? "text-blue-900" : ""}`}
+      >
+        {t("nav.services")}
+      </a>
+      <a
+        href={getRelativeLocaleUrl(lang, "/university")}
+        class={`hover:text-blue-900 ${currentPath === "/university" ? "text-blue-900" : ""}`}
+      >
+        {t("nav.universities")}
+      </a>
+      <a
+        href={getRelativeLocaleUrl(lang, "/contact")}
+        class={`hover:text-blue-900 ${currentPath === "/contact" ? "text-blue-900" : ""}`}
+      >
+        {t("nav.contacts")}
+      </a>
+    </nav>
+    <LangMenu lang={lang} client:load />
+    <div class="md:hidden">
+      <MobileNav url={Astro.url} client:visible />
+    </div>
+  </div>
 </div>
 
 <style>

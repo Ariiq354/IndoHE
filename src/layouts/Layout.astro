@@ -1,16 +1,19 @@
 ---
-import "../assets/css/main.css";
+import "@/assets/css/main.css";
 import Footer from "./Footer.astro";
 import Topbar from "./Topbar.astro";
-import WhatsappIcon from "../assets/WhatsappIcon.astro";
+import WhatsappIcon from "@/assets/WhatsappIcon.astro";
 import "@fontsource/questrial";
+import { getLangFromUrl } from "@/lib/i8n.ts";
+
+const lang = getLangFromUrl(Astro.url);
 
 import { ClientRouter } from "astro:transitions";
 const { title = "default" } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -26,7 +29,7 @@ const { title = "default" } = Astro.props;
     </main>
     <Footer />
     <a
-      class="fixed right-10 bottom-10 flex items-center justify-center rounded-xl bg-blue-900 p-2 text-white"
+      class="fixed right-5 bottom-5 flex items-center justify-center rounded-xl bg-blue-900 p-2 text-white md:right-10 md:bottom-10"
       href="https://wa.me/6289605834601"
       target="_blank"
     >
