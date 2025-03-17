@@ -9,6 +9,14 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const localeUrls = {
+  home: getRelativeLocaleUrl(lang, "/"),
+  about: getRelativeLocaleUrl(lang, "/about"),
+  services: getRelativeLocaleUrl(lang, "/services"),
+  university: getRelativeLocaleUrl(lang, "/university"),
+  contact: getRelativeLocaleUrl(lang, "/contact"),
+};
 ---
 
 <div class="montserrat container flex items-center justify-between">
@@ -18,31 +26,31 @@ const t = useTranslations(lang);
   <div class="flex gap-4">
     <nav class="hidden gap-5 text-lg font-medium md:flex">
       <a
-        href={getRelativeLocaleUrl(lang, "/")}
+        href={localeUrls["home"]}
         class={`hover:text-blue-900 ${currentPath === "/" ? "text-blue-900" : ""}`}
       >
         {t("nav.home")}
       </a>
       <a
-        href={getRelativeLocaleUrl(lang, "/about")}
+        href={localeUrls["about"]}
         class={`hover:text-blue-900 ${currentPath === "/about" ? "text-blue-900" : ""}`}
       >
         {t("nav.about")}
       </a>
       <a
-        href={getRelativeLocaleUrl(lang, "/services")}
+        href={localeUrls["services"]}
         class={`hover:text-blue-900 ${currentPath === "/services" ? "text-blue-900" : ""}`}
       >
         {t("nav.services")}
       </a>
       <a
-        href={getRelativeLocaleUrl(lang, "/university")}
+        href={localeUrls["university"]}
         class={`hover:text-blue-900 ${currentPath === "/university" ? "text-blue-900" : ""}`}
       >
         {t("nav.universities")}
       </a>
       <a
-        href={getRelativeLocaleUrl(lang, "/contact")}
+        href={localeUrls["contact"]}
         class={`hover:text-blue-900 ${currentPath === "/contact" ? "text-blue-900" : ""}`}
       >
         {t("nav.contacts")}
@@ -50,7 +58,7 @@ const t = useTranslations(lang);
     </nav>
     <LangMenu lang={lang} client:load />
     <div class="md:hidden">
-      <MobileNav url={Astro.url} client:visible />
+      <MobileNav url={Astro.url} localeUrls={localeUrls} client:visible />
     </div>
   </div>
 </div>

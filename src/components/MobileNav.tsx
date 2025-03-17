@@ -7,7 +7,19 @@ import {
 } from "@/components/ui/sheet";
 import { getLangFromUrl, useTranslations } from "@/lib/i8n";
 
-export default function MobileNav({ url }: { url: URL }) {
+export default function MobileNav({
+  url,
+  localeUrls,
+}: {
+  url: URL;
+  localeUrls: {
+    home: string;
+    about: string;
+    services: string;
+    university: string;
+    contact: string;
+  };
+}) {
   const lang = getLangFromUrl(url);
   const t = useTranslations(lang);
 
@@ -35,19 +47,19 @@ export default function MobileNav({ url }: { url: URL }) {
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col gap-4 px-4">
-          <a href="/" className="border-b pb-2">
+          <a href={localeUrls["home"]} className="border-b pb-2">
             {t("nav.home")}
           </a>
-          <a href="/about" className="border-b pb-2">
+          <a href={localeUrls["about"]} className="border-b pb-2">
             {t("nav.about")}
           </a>
-          <a href="/services" className="border-b pb-2">
+          <a href={localeUrls["services"]} className="border-b pb-2">
             {t("nav.services")}
           </a>
-          <a href="/university" className="border-b pb-2">
+          <a href={localeUrls["university"]} className="border-b pb-2">
             {t("nav.universities")}
           </a>
-          <a href="/contact" className="border-b pb-2">
+          <a href={localeUrls["contact"]} className="border-b pb-2">
             {t("nav.contacts")}
           </a>
         </nav>
