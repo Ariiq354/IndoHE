@@ -12,10 +12,11 @@ import Layout from "@/layouts/Layout.astro";
 <Layout title="Contact">
   <div>
     <div class="w-full bg-black">
-      <div class="container py-4 text-2xl text-white md:text-4xl">
-        Contact Us
-      </div>
+      <div class="container py-4 text-2xl text-white md:text-4xl">联系我们</div>
     </div>
+    <p class="container py-4 text-justify md:text-lg">
+      我们是一家专注于服务印度尼西亚外国学生的基金会。我们并不是一家只为学生提供到印度尼西亚留学的教育代理机构，我们还将陪伴学生直至他们毕业，甚至帮助他们在印度尼西亚或国外发展事业或继续接受教育。
+    </p>
     <div
       class="container flex flex-col gap-4 py-4 md:flex-row md:py-12 md:text-lg"
     >
@@ -31,7 +32,7 @@ import Layout from "@/layouts/Layout.astro";
             <MailBulkIcon />
           </div>
           <div class="flex flex-col">
-            <h1 class="mb-4 text-2xl font-bold text-red-500">Address</h1>
+            <h1 class="mb-4 text-2xl font-bold text-red-500">地址</h1>
             <p>P.O Box 68563-00610, Nairobi</p>
           </div>
         </div>
@@ -46,7 +47,7 @@ import Layout from "@/layouts/Layout.astro";
             <MapMarker />
           </div>
           <div class="flex flex-col">
-            <h1 class="mb-4 text-2xl font-bold text-red-500">Visit us</h1>
+            <h1 class="mb-4 text-2xl font-bold text-red-500">访问我们</h1>
             <p>
               Regal Plaza , 1st Floor, <br /> Next to Rubis Petrol <br /> Station
               Limuru Road, Nairobi-Kenya
@@ -64,7 +65,7 @@ import Layout from "@/layouts/Layout.astro";
             <Phone />
           </div>
           <div class="flex flex-col">
-            <h1 class="mb-4 text-2xl font-bold text-red-500">Call Us</h1>
+            <h1 class="mb-4 text-2xl font-bold text-red-500">致电我们</h1>
             <p>(+254) 722 235833 <br /> (+254) 721 219235</p>
           </div>
         </div>
@@ -79,8 +80,8 @@ import Layout from "@/layouts/Layout.astro";
             <Envelope />
           </div>
           <div class="flex flex-col">
-            <h1 class="mb-4 text-2xl font-bold text-red-500">Email Address</h1>
-            <p>info@educationaustralia.co.ke</p>
+            <h1 class="mb-4 text-2xl font-bold text-red-500">电子邮件地址</h1>
+            <p>contact@indonesiahe.com</p>
           </div>
         </div>
         <div class="group flex gap-4">
@@ -94,7 +95,7 @@ import Layout from "@/layouts/Layout.astro";
             <Clock />
           </div>
           <div class="flex flex-col">
-            <h1 class="mb-4 text-2xl font-bold text-red-500">Working Hours</h1>
+            <h1 class="mb-4 text-2xl font-bold text-red-500">工作时间</h1>
             <p>
               <b class="font-bold">Monday to Friday</b> &ndash; 8:30am to 4:30pm
               <br />
@@ -104,18 +105,18 @@ import Layout from "@/layouts/Layout.astro";
         </div>
       </div>
       <div class="flex w-full max-w-[784px] flex-col gap-4 bg-red-100 p-4">
-        <h1 class="text-2xl font-bold text-red-500">Enquiries and Feedback</h1>
+        <h1 class="text-2xl font-bold text-red-500">咨询与反馈</h1>
         <div class="grid gap-4 md:grid-cols-2">
-          <Input title="Name" />
-          <Input title="Email Address" />
+          <Input title="姓名" />
+          <Input title="电子邮件地址" />
         </div>
         <div class="grid gap-4 md:grid-cols-2">
-          <Input title="Phone Number" />
-          <Input title="Subject" />
+          <Input title="电话号码" />
+          <Input title="主题" />
         </div>
-        <Textarea title="Message" row="5" />
+        <Textarea title="留言" row="5" />
         <button class="w-fit rounded-full bg-red-500 px-4 py-2 text-white">
-          Submit
+          提交
         </button>
       </div>
     </div>
