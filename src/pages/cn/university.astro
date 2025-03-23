@@ -2,61 +2,93 @@
 import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout title="Universities">
+<Layout title="大学与学院">
   <div>
     <div class="w-full bg-black">
       <div class="container py-4 text-2xl text-white md:text-4xl">
-        Universities
+        大学与学院
       </div>
     </div>
-    <div class="container flex flex-col gap-4 py-4 md:text-lg">
+    <div class="container flex flex-col gap-4 py-4 text-justify md:text-lg">
+      <h2 class="text-2xl font-bold">高等教育层级</h2>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-        cupiditate! In nisi eius facilis voluptatem. Illo expedita nostrum,
-        labore est voluptas incidunt pariatur corporis sequi qui, debitis
-        consequuntur repudiandae quia? Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Tempora amet impedit doloremque alias veniam aperiam
-        aliquid provident, cupiditate iste enim odit nobis deleniti ea, fugiat
-        sed aut, incidunt quidem deserunt!
+        印尼高等教育遵循博洛尼亚公约。印度尼西亚的学位分为三个等级：
+        <li>D4（文凭 4）适用于应用学士学位/艺术学士学位</li>
+        <li>
+          S1（Strata Satu或 Level 1）适用于学士学位（荣誉学位）/理学学士学位
+        </li>
+        <li>S2（Strata Dua或 Level 2）适用于硕士学位</li>
+        <li>S3（Strata Tiga ）适用于博士学位。</li>
+      </p>
+      <h2 class="mt-4 text-2xl font-bold">高等教育类型</h2>
+      <p class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1">
+        <span class="font-medium">大学 (Universitas)</span>
+        <span>: 提供广泛的学科。</span>
+        <span class="font-medium">研究所 (Institut)</span>
+        <span>: 专注于特定领域，如技术或艺术。</span>
+        <span class="font-medium">理工学院 (Politeknik)</span>
+        <span>: 提供职业和应用教育。</span>
+        <span class="font-medium">学院 (Akademi)</span>
+        <span>: 提供特定领域的专业培训。</span>
+        <span class="font-medium">高等学院（高等教育)</span>
+        <span> : 与学院类似，但侧重于特定学科。 </span>
       </p>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
-        cupiditate! In nisi eius facilis voluptatem. Illo expedita nostrum,
-        labore est voluptas incidunt pariatur corporis sequi qui, debitis
-        consequuntur repudiandae quia? Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Tempora amet impedit doloremque alias veniam aperiam
-        aliquid provident, cupiditate iste enim odit nobis deleniti ea, fugiat
-        sed aut, incidunt quidem deserunt!
+        根据学科设置方式，印尼的高等教育机构分为职业教育和科学教育两大类。职业院校的主要区别在于，职业院校的课程更注重实践，而理科院校的课程更注重科学。
       </p>
-      <p class="font-semibold text-red-500">
-        Note that we work with the following accredited education providers:
+      <p>
+        <span class="font-semibold">- 公立和私立</span><br />
+        印度尼西亚大多数大学都是私立的。印尼公立大学竞争激烈。大多数公立大学使用政府资金，并且对招收学生人数有限制。一些公立大学的国际本科课程的费用是当地本科课程的几倍。
       </p>
-      <ul class="ml-10 list-disc">
-        <li>Acknowledge Education</li>
-        <li>Australian Catholic University</li>
-        <li>Curtin University</li>
-        <li>Acknowledge Education</li>
-        <li>Australian Catholic University</li>
-        <li>Curtin University</li>
-        <li>Acknowledge Education</li>
-        <li>Australian Catholic University</li>
-        <li>Curtin University</li>
-        <li>Acknowledge Education</li>
-        <li>Australian Catholic University</li>
-        <li>Curtin University</li>
-        <li>Acknowledge Education</li>
-        <li>Australian Catholic University</li>
-        <li>Curtin University</li>
-        <li>Acknowledge Education</li>
-        <li>Australian Catholic University</li>
-        <li>Curtin University</li>
-        <li>Acknowledge Education</li>
-        <li>Australian Catholic University</li>
-        <li>Curtin University</li>
-        <li>Acknowledge Education</li>
-        <li>Australian Catholic University</li>
-        <li>Curtin University</li>
-      </ul>
+      <p>
+        印尼学生可以凭借高中成绩或参加国家和机构考试进入公立大学。每个学生只要符合专业要求就可以选择所有专业。印度尼西亚与其他国家的不同之处在于，印度尼西亚学生可以直接进入医学院和法学院，而不需要进入法律预科或医学预科
+      </p>
+      <h2 class="mt-4 text-2xl font-bold">教育领域</h2>
+      <p>
+        印尼的教育领域分为：
+        <div class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1">
+          <span class="font-medium">其他</span>
+          <span>: 哲学、宗教</span>
+          <span class="font-medium">社会</span>
+          <span> : 政治学、社会学、人类学、发展研究、心理学 </span>
+          <span class="font-medium">人文学科</span>
+          <span>
+            : 文学 (印尼语、英语、普通话、日语、阿拉伯语)、法律、艺术、设计
+          </span>
+          <span class="font-medium">商业</span>
+          <span>
+            :
+            会计、工商管理、管理、商业信息系统、电算化会计、金融与投资、伊斯兰商业、经济学、经济发展、精算、市场营销与数字商业、创业。
+          </span>
+          <span class="font-medium">健康</span>
+          <span> : 医疗、传统医学、护士、助产士、医疗技术 </span>
+          <span class="font-medium">工程</span>
+          <span>
+            : 信息技术、电气、土木、工业、机械、建筑、城市规划、数据科学、
+          </span>
+          <span class="font-medium">自然科学 </span>
+          <span>
+            :
+            物理学、生物学、统计学、数学、地理学、农业学、农学、海洋研究、食品技术、生物技术
+          </span>
+        </div>
+        在质量方面，印尼教育获得了印尼认证委员会和地方独立质量保证委员会的认证。印度尼西亚的高等教育由高等教育部管理，该部与高中、初中和小学教育部是分开的
+      </p>
+      <h2 class="mt-4 text-2xl font-bold">学习期限</h2>
+      <p>
+        在印度尼西亚，本科课程共包含144个学分，需要4至7年的学习才能完成。有些学分是政府规定的，其余的由大学决定。
+      </p>
+      <h2 class="mt-4 text-2xl font-bold">学费</h2>
+      <p>
+        <span class="font-semibold">- 公立大学 </span><br />
+        大型公立大学已经开设了针对国际本科生的项目。这些项目每年的费用通常在 5,000
+        美元至 7,500 美元之间。国际项目各有差异
+      </p>
+      <p>
+        <span class="font-semibold">- 私立大学</span><br />
+        私立大学对待国际学生采取不同的方法。他们可以将班级与当地班级或特殊班级混合。每年费用在
+        1,000 美元至 2,500 美元之间。确保您不要选择不负责任的私立大学。
+      </p>
     </div>
   </div>
 </Layout>
