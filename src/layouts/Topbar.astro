@@ -1,7 +1,6 @@
 ---
 import MobileNav from "@/components/MobileNav.tsx";
 import "@fontsource/montserrat";
-const currentPath = Astro.url.pathname;
 
 import LangMenu from "@/components/LangMenu";
 import { getLangFromUrl, useTranslations } from "@/lib/i8n.ts";
@@ -11,48 +10,37 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const localeUrls = {
-  home: getRelativeLocaleUrl(lang, "/"),
-  about: getRelativeLocaleUrl(lang, "/about"),
-  services: getRelativeLocaleUrl(lang, "/services"),
-  university: getRelativeLocaleUrl(lang, "/university"),
-  contact: getRelativeLocaleUrl(lang, "/contact"),
+  home: getRelativeLocaleUrl(lang, ""),
+  about: getRelativeLocaleUrl(lang, "about"),
+  services: getRelativeLocaleUrl(lang, "services"),
+  university: getRelativeLocaleUrl(lang, "university"),
+  contact: getRelativeLocaleUrl(lang, "contact"),
+  supports: getRelativeLocaleUrl(lang, "supports"),
 };
 ---
 
 <div class="montserrat container flex items-center justify-between">
-  <a href={localeUrls["home"]} class="w-[50%] md:w-fit">
+  <a href={localeUrls["home"]} class="w-[50%] md:w-fit" aria-label="Home">
     <img src="/logo.webp" alt="" />
   </a>
   <div class="flex gap-4">
     <nav class="hidden items-center gap-5 text-lg font-medium md:flex">
-      <a
-        href={localeUrls["home"]}
-        class={`hover:text-blue-900 ${currentPath === "/" ? "text-blue-900" : ""}`}
-      >
+      <a href={localeUrls["home"]} class={`hover:text-blue-900 `}>
         {t("nav.home")}
       </a>
-      <a
-        href={localeUrls["about"]}
-        class={`hover:text-blue-900 ${currentPath === "/about" ? "text-blue-900" : ""}`}
-      >
+      <a href={localeUrls["about"]} class={`hover:text-blue-900 `}>
         {t("nav.about")}
       </a>
-      <a
-        href={localeUrls["services"]}
-        class={`hover:text-blue-900 ${currentPath === "/services" ? "text-blue-900" : ""}`}
-      >
+      <a href={localeUrls["services"]} class={`hover:text-blue-900 `}>
         {t("nav.services")}
       </a>
-      <a
-        href={localeUrls["university"]}
-        class={`hover:text-blue-900 ${currentPath === "/university" ? "text-blue-900" : ""}`}
-      >
+      <a href={localeUrls["university"]} class={`hover:text-blue-900 `}>
         {t("nav.universities")}
       </a>
-      <a
-        href={localeUrls["contact"]}
-        class={`hover:text-blue-900 ${currentPath === "/contact" ? "text-blue-900" : ""}`}
-      >
+      <a href={localeUrls["supports"]} class={`hover:text-blue-900 `}>
+        {t("nav.support")}
+      </a>
+      <a href={localeUrls["contact"]} class={`hover:text-blue-900 `}>
         {t("nav.contacts")}
       </a>
     </nav>

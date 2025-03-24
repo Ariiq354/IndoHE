@@ -17,7 +17,7 @@ export default function LangMenu({ lang }: { lang: string }) {
 
   return (
     <Select defaultValue={lang} onValueChange={handleChange}>
-      <SelectTrigger>
+      <SelectTrigger aria-label="Language Select">
         <SelectValue placeholder="lang" />
       </SelectTrigger>
       <SelectContent>

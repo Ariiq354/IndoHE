@@ -2,124 +2,176 @@
 import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout title="Services">
+<Layout title="服务">
   <div>
     <div class="w-full bg-black">
-      <div class="container py-4 text-2xl text-white md:text-4xl">Services</div>
+      <div class="container py-4 text-2xl text-white md:text-4xl">服务</div>
     </div>
     <div class="container flex flex-col gap-4 py-4 md:text-lg">
+      <p>我们的服务包括但不限于：</p>
+      <h2 class="text-2xl font-bold">帮助学生选择未来的教育</h2>
       <p>
-        <b class="font-bold"> Lorem ipsum dolor sit amet consectetur</b> adipisicing
-        elit. Neque ipsum minus adipisci aperiam nobis laudantium tempore tenetur
-        odit, id sequi amet, architecto itaque exercitationem est dolore rem possimus
-        voluptatem excepturi?
+        印尼有4000多所高等教育机构。是的，你没看错。超过4000了。这比其他几个东盟国家的总和还要多。尽管大学数量众多，但大多数大学都是针对当地人的。所以您需要帮助来找到适合您的产品。
       </p>
-      <div class="my-4 grid gap-4 md:grid-cols-2 md:gap-16">
-        <div>
-          <h1 class="mb-2 font-semibold text-blue-900">
-            Sed ullamcorper lacus enim
-          </h1>
-          <p class="text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            repellendus nihil incidunt, quidem similique rem ea nobis eveniet
-            unde accusamus dolores explicabo quis minima quaerat officia
-            consequatur nostrum fugiat odio! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Optio impedit cupiditate nisi soluta
-            animi voluptates delectus veniam? Libero molestias in eaque ab
-            similique sint tempore iure perspiciatis voluptatibus, fugit ea.
-          </p>
-        </div>
-        <div class="h-[275px] w-full bg-gray-300 shadow-lg"></div>
+      <h2 class="mt-4 text-2xl font-bold">签证流程协助</h2>
+      <p>办理印度尼西亚外国学生签证涉及几个关键步骤。以下是典型流程的细分：</p>
+      <ol class="ml-4 flex list-decimal flex-col gap-4">
+        <li>
+          接受和赞助：
+          <ol class="ml-4 list-disc">
+            <li>
+              录取通知书： <br /> 您必须首先获得印度尼西亚认可的教育机构的正式录取通知书。该机构通常会充当您的赞助者。
+            </li>
+            <li>
+              学习许可： <br /> 您的教育机构通常会协助您从印度尼西亚教育和文化部获得学习许可或推荐信。
+            </li>
+          </ol>
+        </li>
+        <li>
+          签证申请（VITAS）：
+          <ol class="ml-4 list-disc">
+            <li>
+              收集文件： <br /> 必需文件包括：
+              <ul class="ml-4">
+                <li>- 有效期足够且有效的护照。</li>
+                <li>- 您所在院校的录取通知书。</li>
+                <li>- 学习许可证。</li>
+                <li>- 有足够财力的证明。</li>
+                <li>- 护照尺寸的照片。</li>
+                <li>- 印度尼西亚大使馆或领事馆可能要求的其他文件。</li>
+              </ul>
+            </li>
+            <li>
+              在印度尼西亚大使馆/领事馆申请： <br /> 您将在您本国的印度尼西亚大使馆或领事馆申请有限居留签证
+              (VITAS)。在某些情况下，签证批准可能会以电子方式发送。
+            </li>
+            <li>
+              签证批准： <br /> 完成所需流程并付款后，将签发签证批准函。
+            </li>
+          </ol>
+        </li>
+        <li>
+          抵达后程序（KITAS）：
+          <ol class="ml-4 list-disc">
+            <li>
+              将 VITAS 转换为 KITAS： <br /> 抵达印度尼西亚后，您必须在当地移民局将您的
+              VITAS 转换为有限居留许可证 (KITAS)。
+            </li>
+            <li>
+              其他抵达后登记： <br /> 您可能需要向当地警察局登记。
+            </li>
+            <li>
+              基塔斯： <br /> KITAS 允许您在学习期间留在印度尼西亚
+            </li>
+            <li>
+              管理资源规划（MERP）： <br /> 如果您计划在学习期间进出印度尼西亚，则需要多次出境再入境许可证（MERP）。
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <h2 class="mt-4 text-2xl font-bold">帮助申请大学</h2>
+      <p>
+        如果您是外国学生，则需要满足特殊入境要求。当心那些自称是国际性的大学，但收取的学费却相差甚远。这些大学不教你英语，也没有给予大学应有的待遇。请注意。
+      </p>
+      <div>
+        <p>请联系我们，我们将一步步帮助您进入印度尼西亚。一般要求是：</p>
+        <ol class="ml-4 list-decimal">
+          <li>高中毕业，无论是普通高中还是职业学校</li>
+          <li>
+            如果您是已经获得文凭的转校生，您可以在印度尼西亚完成您的学士学位。
+          </li>
+          <li>
+            如果您是一名职业学生，您可以选择继续攻读职业学士学位或理学学士学位。
+          </li>
+          <li>您的身份证和出生证明。</li>
+          <li>您的成绩单和高中文凭。</li>
+          <li>被大学录取后前往印度尼西亚留学需要移民局签发签证</li>
+        </ol>
       </div>
-      <hr class="mx-auto w-full max-w-96" />
-      <div class="my-4 grid gap-4 md:grid-cols-2 md:gap-16">
-        <div>
-          <h1 class="mb-2 font-semibold text-blue-900">
-            Sed ullamcorper lacus enim
-          </h1>
-          <p class="text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            repellendus nihil incidunt, quidem similique rem ea nobis eveniet
-            unde accusamus dolores explicabo quis minima quaerat officia
-            consequatur nostrum fugiat odio! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Optio impedit cupiditate nisi soluta
-            animi voluptates delectus veniam? Libero molestias in eaque ab
-            similique sint tempore iure perspiciatis voluptatibus, fugit ea.
-          </p>
-        </div>
-        <div class="h-[275px] w-full bg-gray-300 shadow-lg"></div>
+      <h2 class="mt-4 text-2xl font-bold">帮助寻找住宿</h2>
+      <div>
+        <p>我们可以通过以下方式为国际学生提供住宿帮助：</p>
+        <ol class="ml-4 list-decimal">
+          <li>
+            我们提供与住宿相关的信息，包括校园宿舍和私人寄宿公寓。这很重要，以便外国学生不必支付昂贵的学费。
+          </li>
+          <li>我们帮助学生获得当地居留许可。</li>
+          <li>帮助学生认识当地区域和交通</li>
+        </ol>
       </div>
-      <hr class="mx-auto w-full max-w-96" />
-      <div class="my-4 grid gap-4 md:grid-cols-2 md:gap-16">
-        <div>
-          <h1 class="mb-2 font-semibold text-blue-900">
-            Sed ullamcorper lacus enim
-          </h1>
-          <p class="text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            repellendus nihil incidunt, quidem similique rem ea nobis eveniet
-            unde accusamus dolores explicabo quis minima quaerat officia
-            consequatur nostrum fugiat odio! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Optio impedit cupiditate nisi soluta
-            animi voluptates delectus veniam? Libero molestias in eaque ab
-            similique sint tempore iure perspiciatis voluptatibus, fugit ea.
-          </p>
-        </div>
-        <div class="h-[275px] w-full bg-gray-300 shadow-lg"></div>
+      <h2 class="mt-4 text-2xl font-bold">出发前简报</h2>
+      <div>
+        <p>1. 抵达前协调：</p>
+        <ul class="ml-4 list-disc">
+          <li>收集航班详细信息</li>
+          <li>沟通</li>
+          <li>信息包：</li>
+          <li>
+            考虑提供包含以下内容的数字或物理信息包：
+            <ol class="ml-4 list-decimal">
+              <li>当地紧急电话号码。</li>
+              <li>基本印尼语短语。</li>
+              <li>该地区的地图。</li>
+              <li>有关当地交通的信息。</li>
+            </ol>
+          </li>
+        </ul>
       </div>
-      <hr class="mx-auto w-full max-w-96" />
-      <div class="my-4 grid gap-4 md:grid-cols-2 md:gap-16">
-        <div>
-          <h1 class="mb-2 font-semibold text-blue-900">
-            Sed ullamcorper lacus enim
-          </h1>
-          <p class="text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            repellendus nihil incidunt, quidem similique rem ea nobis eveniet
-            unde accusamus dolores explicabo quis minima quaerat officia
-            consequatur nostrum fugiat odio! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Optio impedit cupiditate nisi soluta
-            animi voluptates delectus veniam? Libero molestias in eaque ab
-            similique sint tempore iure perspiciatis voluptatibus, fugit ea.
-          </p>
-        </div>
-        <div class="h-[275px] w-full bg-gray-300 shadow-lg"></div>
+      <h2 class="mt-4 text-2xl font-bold">从机场到住宿的帮助</h2>
+      <div>
+        <p>2. 机场接机：</p>
+        <ul class="ml-4 list-disc">
+          <li>
+            见面会：<br />
+            安排一个可靠的人（例如，大学工作人员，代理机构代表或预订的司机）在到达区迎接学生。
+          </li>
+          <li>
+            行李协助： <br /> 提供行李领取及运输协助。
+          </li>
+          <li>
+            行李协助： <br /> 如果可能的话，协助学生在机场购买当地的 SIM 卡。这对于沟通来说至关重要。
+          </li>
+          <li>
+            运输 <br /> 安排安全可靠的交通前往住宿地点。选项包括：
+            <ol class="ml-4 list-decimal">
+              <li>提前预订的私家车。</li>
+              <li>大学交通。</li>
+              <li>信誉良好的出租车服务。</li>
+            </ol>
+          </li>
+          <li>
+            欢迎信息： <br /> 在前往住宿地点的途中，提供有关周边地区的信息会非常有用。
+          </li>
+        </ul>
       </div>
-      <hr class="mx-auto w-full max-w-96" />
-      <div class="my-4 grid gap-4 md:grid-cols-2 md:gap-16">
-        <div>
-          <h1 class="mb-2 font-semibold text-blue-900">
-            Sed ullamcorper lacus enim
-          </h1>
-          <p class="text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            repellendus nihil incidunt, quidem similique rem ea nobis eveniet
-            unde accusamus dolores explicabo quis minima quaerat officia
-            consequatur nostrum fugiat odio! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Optio impedit cupiditate nisi soluta
-            animi voluptates delectus veniam? Libero molestias in eaque ab
-            similique sint tempore iure perspiciatis voluptatibus, fugit ea.
-          </p>
-        </div>
-        <div class="h-[275px] w-full bg-gray-300 shadow-lg"></div>
-      </div>
-      <hr class="mx-auto w-full max-w-96" />
-      <div class="my-4 grid gap-4 md:grid-cols-2 md:gap-16">
-        <div>
-          <h1 class="mb-2 font-semibold text-blue-900">
-            Sed ullamcorper lacus enim
-          </h1>
-          <p class="text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            repellendus nihil incidunt, quidem similique rem ea nobis eveniet
-            unde accusamus dolores explicabo quis minima quaerat officia
-            consequatur nostrum fugiat odio! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Optio impedit cupiditate nisi soluta
-            animi voluptates delectus veniam? Libero molestias in eaque ab
-            similique sint tempore iure perspiciatis voluptatibus, fugit ea.
-          </p>
-        </div>
-        <div class="h-[275px] w-full bg-gray-300 shadow-lg"></div>
+      <div>
+        <p>3. 抵达住宿：</p>
+        <ul class="ml-4 list-disc">
+          <li>
+            办理登机手续协助： <br /> 协助学生办理住宿登记手续。
+          </li>
+          <li>
+            住宿介绍： <br />
+            提供住宿的简要介绍，包括：
+            <ol class="ml-4 list-decimal">
+              <li>重要设施的位置。</li>
+              <li>如何使用电器。</li>
+              <li>当地法规和条例。</li>
+            </ol>
+          </li>
+          <li>
+            当地介绍： <br /> 如果时间允许，请简要介绍当地情况，重点介绍以下基本设施：
+            <ol class="ml-4 list-decimal">
+              <li>超市。</li>
+              <li>餐馆。</li>
+              <li>公共交通。</li>
+            </ol>
+          </li>
+          <li>
+            后续行动： <br />
+            几天后跟进学生的情况，确保他们已经舒适地安顿下来，并解决任何问题或疑虑。
+          </li>
+        </ul>
       </div>
     </div>
   </div>
