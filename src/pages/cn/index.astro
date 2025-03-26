@@ -9,7 +9,7 @@ import Book from "@/assets/Book.astro";
   <div class="h-[440px] w-full bg-gray-400"></div>
   <div class="container my-12 flex flex-col gap-4 md:text-lg">
     <div>
-      <h1 class="text-center text-3xl font-bold text-red-500">Who We Are</h1>
+      <h1 class="text-center text-3xl font-bold text-red-500">我们是谁</h1>
       <div class="mx-auto my-4 h-7 max-w-40"></div>
       <p class="text-justify">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime incidunt
@@ -22,7 +22,7 @@ import Book from "@/assets/Book.astro";
       </p>
     </div>
     <div>
-      <h1 class="text-center text-3xl font-bold text-red-500">What We Do</h1>
+      <h1 class="text-center text-3xl font-bold text-red-500">我们的业务</h1>
       <div class="mx-auto my-4 h-7 max-w-40"></div>
       <div class="flex flex-col gap-4 md:flex-row">
         <div class="w-full max-w-[384px]">
@@ -71,21 +71,24 @@ import Book from "@/assets/Book.astro";
       </div>
     </div>
   </div>
-  <div class="w-full bg-gray-700 px-4 py-12">
-    <div class="container flex max-w-[736px] flex-col gap-4 md:text-lg">
-      <h1 class="text-center text-3xl font-bold text-red-500">
-        Start Your Journey with us
-      </h1>
+  <div
+    class="relative w-full bg-[url('city-pic.webp')] bg-cover bg-center px-4 py-12"
+  >
+    <div class="absolute inset-0 bg-black/50" aria-disabled="true"></div>
+    <div
+      class="relative z-10 container flex max-w-[736px] flex-col gap-4 md:text-lg"
+    >
+      <h1 class="text-center text-3xl font-bold text-red-500">旅程的开始</h1>
       <div class="grid gap-4 md:grid-cols-2">
-        <Input title="Full Name" white />
-        <Input title="Email Address" white />
+        <Input title="全名" white />
+        <Input title="电子邮件地址" white />
       </div>
       <div class="grid gap-4 md:grid-cols-2">
-        <Input title="Phone Number" white />
-        <Input title="Course of Interest" white />
+        <Input title="电话号码" white />
+        <Input title="感兴趣的课程" white />
       </div>
-      <Input title="City of Interest" white />
-      <Textarea title="Message" row="5" white />
+      <Input title="感兴趣的城市" white />
+      <Textarea title="留言" row="5" white />
       <button class="w-fit rounded-full bg-red-500 px-4 py-2 text-white">
         Submit
       </button>
