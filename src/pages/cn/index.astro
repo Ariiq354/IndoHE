@@ -6,7 +6,7 @@ import Book from "@/assets/Book.astro";
 ---
 
 <Layout title="Home">
-  <div class="h-[440px] w-full bg-gray-400"></div>
+  <div class="h-[500px] w-full bg-[url('/student.webp')] bg-cover"></div>
   <div class="container my-12 flex flex-col gap-4 md:text-lg">
     <div>
       <h1 class="text-center text-3xl font-bold text-red-500">我们是谁</h1>
@@ -21,87 +21,96 @@ import Book from "@/assets/Book.astro";
         incidunt.
       </p>
     </div>
-    <div>
+    <div class="mt-12">
       <h1 class="text-center text-3xl font-bold text-red-500">我们的业务</h1>
-      <div class="mx-auto my-4 h-7 max-w-40"></div>
       <div class="flex flex-col gap-4 md:flex-row">
-        <div class="w-full max-w-[384px]">
-          <div class="h-[289px] w-full bg-gray-300"></div>
-        </div>
-        <div class="px-12 py-4">
+        <img src="/logoSquare.webp" alt="logoSquare" class="max-w-96" />
+        <div class="flex items-center px-12 py-4">
           <div class="grid gap-6 md:grid-cols-2">
-            <div class="group flex items-center gap-4 text-2xl font-semibold">
-              <div
-                class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-black"
-              >
+            <a href="/cn/services/#service1">
+              <div class="group flex items-center gap-4 text-2xl font-semibold">
                 <div
-                  class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-black"
+                  class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-black"
                 >
+                  <div
+                    class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-black"
+                  >
+                  </div>
+                  <Book />
                 </div>
-                <Book />
+                帮助学生选择未来的教育
               </div>
-              Sed ullamcorper lacus enim
-            </div>
-            <div class="group flex items-center gap-4 text-2xl font-semibold">
-              <div
-                class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-black"
-              >
+            </a>
+            <a href="/cn/services/#service2">
+              <div class="group flex items-center gap-4 text-2xl font-semibold">
                 <div
-                  class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-black"
+                  class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-black"
                 >
+                  <div
+                    class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-black"
+                  >
+                  </div>
+                  <Book />
                 </div>
-                <Book />
+                签证流程协助
               </div>
-              Sed ullamcorper lacus enim
-            </div>
-            <div class="group flex items-center gap-4 text-2xl font-semibold">
-              <div
-                class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-black"
-              >
+            </a>
+            <a href="/cn/services/#service3">
+              <div class="group flex items-center gap-4 text-2xl font-semibold">
                 <div
-                  class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-black"
+                  class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-black"
                 >
+                  <div
+                    class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-black"
+                  >
+                  </div>
+                  <Book />
                 </div>
-                <Book />
+                帮助申请大学
               </div>
-              Sed ullamcorper lacus enim
-            </div>
-            <div class="group flex items-center gap-4 text-2xl font-semibold">
-              <div
-                class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-black"
-              >
+            </a>
+            <a href="/cn/services/#service4">
+              <div class="group itms-center flex gap-4 text-2xl font-semibold">
                 <div
-                  class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-black"
+                  class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-black"
                 >
+                  <div
+                    class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-black"
+                  >
+                  </div>
+                  <Book />
                 </div>
-                <Book />
+                帮助寻找住宿
               </div>
-              Sed ullamcorper lacus enim
-            </div>
-            <div class="group flex items-center gap-4 text-2xl font-semibold">
-              <div
-                class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-black"
-              >
+            </a>
+            <a href="/cn/services/#service5">
+              <div class="group flex items-center gap-4 text-2xl font-semibold">
                 <div
-                  class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-black"
+                  class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-black"
                 >
+                  <div
+                    class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-black"
+                  >
+                  </div>
+                  <Book />
                 </div>
-                <Book />
+                出发前简报
               </div>
-              Sed ullamcorper lacus enim
-            </div>
-            <div class="group flex items-center gap-4 text-2xl font-semibold">
-              <div
-                class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-black"
-              >
+            </a>
+            <a href="/cn/services/#service6">
+              <div class="group flex items-center gap-4 text-2xl font-semibold">
                 <div
-                  class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-black"
+                  class="relative flex h-12 w-12 items-center justify-center rounded-full bg-blue-900 text-white transition-all duration-200 group-hover:scale-90 group-hover:bg-black"
                 >
+                  <div
+                    class="absolute -z-10 h-10 w-10 rounded-full bg-blue-900 group-hover:animate-ping group-hover:bg-black"
+                  >
+                  </div>
+                  <Book />
                 </div>
-                <Book />
+                从机场到住宿的帮助
               </div>
-              Sed ullamcorper lacus enim
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -125,7 +134,7 @@ import Book from "@/assets/Book.astro";
       </div>
       <Input title="感兴趣的城市" white />
       <Textarea title="留言" row="5" white />
-      <button class="w-fit rounded-full bg-red-500 px-4 py-2 text-white">
+      <button class="w-fit rounded-full bg-red-700 px-4 py-2 text-white">
         Submit
       </button>
     </div>
