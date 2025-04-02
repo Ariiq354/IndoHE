@@ -6,6 +6,7 @@
   import Textarea from "./Textarea.vue";
   import { toast } from "vue-sonner";
 
+  const isLoading = ref(false);
   const form = ref();
   const props = defineProps<{
     url: URL;
@@ -15,6 +16,8 @@
   const t = useTranslations(lang);
 
   function sendEmail() {
+    isLoading.value = true;
+
     emailjs
       .sendForm("service_p81i1n3", "template_fgxzs3g", form.value, {
         publicKey: "aRcbUp8IOulZEh4vX",
@@ -30,7 +33,8 @@
             description: t("toast.failedMessage"),
           });
         }
-      );
+      )
+      .finally(() => (isLoading.value = false));
   }
 </script>
 
@@ -52,7 +56,8 @@
     <Textarea :title="t('form.message')" name="message" white />
     <button
       type="submit"
-      class="w-fit rounded-full bg-red-700 px-4 py-2 text-white"
+      class="w-fit rounded-full bg-red-700 px-4 py-2 text-white disabled:opacity-75"
+      :disabled="isLoading"
     >
       {{ t("form.submit") }}
     </button>
