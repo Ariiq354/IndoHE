@@ -1,5 +1,6 @@
 {
   "trailingComma": "es5",
+  "vueIndentScriptAndStyle": true,
   "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
   "overrides": [
     {

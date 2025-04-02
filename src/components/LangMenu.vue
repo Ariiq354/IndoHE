@@ -1,12 +1,17 @@
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+<script setup lang="ts">
+  import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+  } from "@/components/ui/select";
+  import SelectGroup from "./ui/select/SelectGroup.vue";
 
-export default function LangMenu({ lang }: { lang: string }) {
+  defineProps<{
+    lang: string;
+  }>();
+
   function handleChange(value: string) {
     if (value === "en") {
       window.location.href = "/";
@@ -14,13 +19,18 @@ export default function LangMenu({ lang }: { lang: string }) {
       window.location.href = "/cn";
     }
   }
+</script>
 
-  return (
-    <Select defaultValue={lang} onValueChange={handleChange}>
-      <SelectTrigger aria-label="Language Select">
-        <SelectValue placeholder="lang" />
-      </SelectTrigger>
-      <SelectContent>
+<template>
+  <Select
+    :default-value="lang"
+    @update:model-value="(e) => handleChange(e!.toString())"
+  >
+    <SelectTrigger aria-label="Language Select">
+      <SelectValue class="text-base" />
+    </SelectTrigger>
+    <SelectContent>
+      <SelectGroup>
         <SelectItem value="en">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +100,7 @@ export default function LangMenu({ lang }: { lang: string }) {
           </svg>
           中文
         </SelectItem>
-      </SelectContent>
-    </Select>
-  );
-}
+      </SelectGroup>
+    </SelectContent>
+  </Select>
+</template>

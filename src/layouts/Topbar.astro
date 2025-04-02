@@ -1,9 +1,8 @@
 ---
-import MobileNav from "@/components/MobileNav.tsx";
-import "@fontsource/montserrat";
-
-import LangMenu from "@/components/LangMenu";
+import LangMenu from "@/components/LangMenu.vue";
+import MobileNav from "@/components/MobileNav.vue";
 import { getLangFromUrl, useTranslations } from "@/lib/i8n.ts";
+import "@fontsource/montserrat";
 import { getRelativeLocaleUrl } from "astro:i18n";
 
 const lang = getLangFromUrl(Astro.url);
@@ -46,7 +45,7 @@ const localeUrls = {
     </nav>
     <LangMenu lang={lang} client:load />
     <div class="md:hidden">
-      <MobileNav url={Astro.url} localeUrls={localeUrls} client:visible />
+      <MobileNav url={Astro.url} localeUrls={localeUrls} client:load />
     </div>
   </div>
 </div>
