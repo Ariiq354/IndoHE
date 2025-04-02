@@ -1,8 +1,7 @@
 ---
-import Input from "@/components/Input.astro";
 import Layout from "@/layouts/Layout.astro";
-import Textarea from "@/components/Textarea.astro";
 import Book from "@/assets/Book.astro";
+import HomeForm from "@/components/HomeForm.vue";
 ---
 
 <Layout title="Home">
@@ -127,19 +126,7 @@ import Book from "@/assets/Book.astro";
       <h1 class="text-center text-3xl font-bold text-red-500">
         Start Your Journey with us
       </h1>
-      <div class="grid gap-4 md:grid-cols-2">
-        <Input title="Full Name" white />
-        <Input title="Email Address" white />
-      </div>
-      <div class="grid gap-4 md:grid-cols-2">
-        <Input title="Phone Number" white />
-        <Input title="Course of Interest" white />
-      </div>
-      <Input title="City of Interest" white />
-      <Textarea title="Message" row="5" white />
-      <button class="w-fit rounded-full bg-red-700 px-4 py-2 text-white">
-        Submit
-      </button>
+      <HomeForm url={Astro.url} client:load />
     </div>
   </div>
 </Layout>

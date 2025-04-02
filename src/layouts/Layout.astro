@@ -1,6 +1,7 @@
 ---
 import "@/assets/css/main.css";
 import Footer from "./Footer.astro";
+import { Toaster } from "@/components/ui/sonner";
 import Topbar from "./Topbar.astro";
 import WhatsappIcon from "@/assets/WhatsappIcon.astro";
 import "@fontsource/questrial";
@@ -23,6 +24,7 @@ const { title = "default" } = Astro.props;
     <title>{title}</title>
     <ClientRouter />
   </head>
+  <Toaster client:load />
   <body>
     <Topbar />
     <main>

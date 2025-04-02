@@ -4,8 +4,7 @@ import Envelope from "@/assets/Envelope.astro";
 import MailBulkIcon from "@/assets/MailBulkIcon.astro";
 import MapMarker from "@/assets/MapMarker.astro";
 import Phone from "@/assets/Phone.astro";
-import Input from "@/components/Input.astro";
-import Textarea from "@/components/Textarea.astro";
+import ContactForm from "@/components/ContactForm.vue";
 import Layout from "@/layouts/Layout.astro";
 ---
 
@@ -106,18 +105,7 @@ import Layout from "@/layouts/Layout.astro";
       </div>
       <div class="flex w-full max-w-[784px] flex-col gap-4 bg-red-100 p-4">
         <h1 class="text-2xl font-bold text-red-500">咨询与反馈</h1>
-        <div class="grid gap-4 md:grid-cols-2">
-          <Input title="姓名" />
-          <Input title="电子邮件地址" />
-        </div>
-        <div class="grid gap-4 md:grid-cols-2">
-          <Input title="电话号码" />
-          <Input title="主题" />
-        </div>
-        <Textarea title="留言" row="5" />
-        <button class="w-fit rounded-full bg-red-700 px-4 py-2 text-white">
-          提交
-        </button>
+        <ContactForm url={Astro.url} client:load />
       </div>
     </div>
   </div>
