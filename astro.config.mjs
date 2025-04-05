@@ -19,6 +19,4 @@ export default defineConfig({
     locales: ["en", "cn"],
     defaultLocale: "en",
   },
-
-  prefetch: true,
 });
