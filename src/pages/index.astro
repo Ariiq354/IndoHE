@@ -6,21 +6,42 @@ import HomeForm from "@/components/HomeForm.vue";
 
 <Layout title="Home">
   <div class="header-bg h-[500px] w-full bg-cover"></div>
-  <div class="container my-12 flex flex-col gap-4 md:text-lg">
-    <div>
-      <h1 class="text-center text-3xl font-bold text-red-500">Who We Are</h1>
-      <div class="mx-auto my-4 h-7 max-w-40"></div>
-      <p class="text-justify">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime incidunt
-        cupiditate nam sint est delectus ut ducimus consequatur, labore itaque
-        nesciunt id, quos ipsa explicabo unde! Quos quaerat eveniet placeat!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
-        voluptatem voluptates doloremque porro placeat unde consequatur saepe
-        nemo ab commodi magni rerum illo harum et nulla sint dicta aperiam
-        incidunt.
+  <div class="container my-12 flex flex-col gap-12 md:text-lg">
+    <div class="flex flex-col gap-4">
+      <h1 class="text-center text-3xl font-bold text-red-500">
+        IndonesiaHE- Your Gateway to Higher Education in Indonesia
+      </h1>
+      <p class="text-center">
+        Welcome to IndonesiaHE, your dedicated partner and premier education
+        consultant specializing in guiding international students towards
+        enriching higher education experiences throughout Indonesia. Based in
+        the heart of the archipelago we are passionate about connecting global
+        talent with the diverse and high-quality academic opportunities
+        Indonesia has to offer.
       </p>
     </div>
-    <div class="mt-12">
+    <div class="flex flex-col gap-4">
+      <h1 class="text-center text-3xl font-bold text-red-500">Our Mission</h1>
+      <p class="text-center">
+        Our mission is simple: To be the most trusted bridge for students
+        worldwide seeking to pursue undergraduate, postgraduate, or doctoral
+        studies in Indonesia. We strive to simplify the complex process of
+        university selection, application, and transition, ensuring every
+        student feels supported from their home country right up to their campus
+        arrival and beyond.
+      </p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h1 class="text-center text-3xl font-bold text-red-500">Who We Help</h1>
+      <p class="text-center">
+        We cater to aspiring students from all corners of the globe who are
+        interested in exploring Indonesia's unique cultural landscape while
+        gaining a world-class education. Whether you're finishing high school,
+        seeking a Bachelor's degree, advancing with a Master's, or pursuing
+        research, we are here to assist.
+      </p>
+    </div>
+    <div>
       <h1 class="text-center text-3xl font-bold text-red-500">What We Do</h1>
       <div class="flex flex-col gap-4 md:flex-row">
         <img src="/logoSquare.webp" alt="logoSquare" class="max-w-96" />
@@ -37,7 +58,7 @@ import HomeForm from "@/components/HomeForm.vue";
                   </div>
                   <Book />
                 </div>
-                Help Student Choose Their Future Education
+                University & Program Matching
               </div>
             </a>
             <a href="/services/#service2">
@@ -51,7 +72,7 @@ import HomeForm from "@/components/HomeForm.vue";
                   </div>
                   <Book />
                 </div>
-                Helping Visa Process
+                Visa Support
               </div>
             </a>
             <a href="/services/#service3">
@@ -65,7 +86,7 @@ import HomeForm from "@/components/HomeForm.vue";
                   </div>
                   <Book />
                 </div>
-                Helping Application to Universities
+                Application Guidance
               </div>
             </a>
             <a href="/services/#service4">
@@ -79,7 +100,7 @@ import HomeForm from "@/components/HomeForm.vue";
                   </div>
                   <Book />
                 </div>
-                Helping to find Accommodation
+                Accommodation Assistance
               </div>
             </a>
             <a href="/services/#service5">
@@ -107,10 +128,43 @@ import HomeForm from "@/components/HomeForm.vue";
                   </div>
                   <Book />
                 </div>
-                Helping from Airport to Accommodation
+                Arrival & Orientation Support
               </div>
             </a>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-12">
+      <h1 class="text-center text-3xl font-bold text-red-500">Why Choose Us</h1>
+      <div class="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div class="text-center">
+          <h1 class="font-semibold">Local Expertise</h1>
+          <p>
+            Our team possesses in-depth knowledge of the Indonesian higher
+            education system, culture, and administrative procedures.
+          </p>
+        </div>
+        <div class="text-center">
+          <h1 class="text-center font-semibold">University Partnership</h1>
+          <p>
+            We maintain strong relationships with reputable universities across
+            Indonesia, offering you a wide range of choices.
+          </p>
+        </div>
+        <div class="text-center">
+          <h1 class="text-center font-semibold">Personalized Service</h1>
+          <p>
+            We believe every student's journey is unique and provide tailored
+            guidance to meet your individual needs.
+          </p>
+        </div>
+        <div class="text-center">
+          <h1 class="text-center font-semibold">Dedicated Support</h1>
+          <p>
+            We are committed to your success and well-being throughout your
+            educational journey in Indonesia.
+          </p>
         </div>
       </div>
     </div>
@@ -122,10 +176,18 @@ import HomeForm from "@/components/HomeForm.vue";
     <div
       class="relative z-10 container flex max-w-[736px] flex-col gap-4 md:text-lg"
     >
-      <h1 class="text-center text-3xl font-bold text-red-500">
-        Start Your Journey with us
+      <h1 class="text-center text-3xl font-bold text-red-400">
+        Contact us today to start exploring your future in Indonesia!
       </h1>
       <HomeForm url={Astro.url} client:load />
     </div>
   </div>
 </Layout>
+
+<style>
+  .dotted-hr {
+    border: 0;
+    border-top: 3px dotted #999;
+    margin: 2rem 0;
+  }
+</style>

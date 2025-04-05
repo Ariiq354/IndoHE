@@ -6,18 +6,26 @@ import Layout from "@/layouts/Layout.astro";
 
 <Layout title="首页">
   <div class="header-bg h-[500px] w-full bg-cover"></div>
-  <div class="container my-12 flex flex-col gap-4 md:text-lg">
-    <div>
-      <h1 class="text-center text-3xl font-bold text-red-500">我们是谁</h1>
-      <div class="mx-auto my-4 h-7 max-w-40"></div>
-      <p class="text-justify">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime incidunt
-        cupiditate nam sint est delectus ut ducimus consequatur, labore itaque
-        nesciunt id, quos ipsa explicabo unde! Quos quaerat eveniet placeat!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
-        voluptatem voluptates doloremque porro placeat unde consequatur saepe
-        nemo ab commodi magni rerum illo harum et nulla sint dicta aperiam
-        incidunt.
+  <div class="container my-12 flex flex-col gap-12 md:text-lg">
+    <div class="flex flex-col gap-4">
+      <h1 class="text-center text-3xl font-bold text-red-500">
+        IndonesiaHE——通往印度尼西亚高等教育的门户
+      </h1>
+      <p class="text-center">
+        欢迎来到
+        IndonesiaHE，您值得信赖的合作伙伴与首选教育顾问，专注于引导国际学生在印度尼西亚展开丰富的高等教育旅程。我们总部位于这个群岛的中心，致力于将全球人才与印度尼西亚多元且高质量的学术资源相连接。
+      </p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h1 class="text-center text-3xl font-bold text-red-500">我们的使命</h1>
+      <p class="text-center">
+        我们的使命很简单：成为全球学生赴印尼攻读本科、硕士或博士学位最值得信赖的桥梁。我们致力于简化大学选择、申请及过渡的复杂流程，确保每位学生从母国启程直到抵达校园，始终感受到我们的全程支持。
+      </p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <h1 class="text-center text-3xl font-bold text-red-500">我们帮助谁</h1>
+      <p class="text-center">
+        我们服务于来自全球各地、有志于在印度尼西亚探索独特文化与获取世界一流教育的学生。无论您是高中毕业生、计划攻读学士、继续深造硕士或从事研究，我们都愿意为您提供帮助。
       </p>
     </div>
     <div class="mt-12">
@@ -37,7 +45,7 @@ import Layout from "@/layouts/Layout.astro";
                   </div>
                   <Book />
                 </div>
-                帮助学生选择未来的教育
+                院校与课程匹配
               </div>
             </a>
             <a href="/cn/services/#service2">
@@ -51,7 +59,7 @@ import Layout from "@/layouts/Layout.astro";
                   </div>
                   <Book />
                 </div>
-                签证流程协助
+                签证支持
               </div>
             </a>
             <a href="/cn/services/#service3">
@@ -65,7 +73,7 @@ import Layout from "@/layouts/Layout.astro";
                   </div>
                   <Book />
                 </div>
-                帮助申请大学
+                申请指导
               </div>
             </a>
             <a href="/cn/services/#service4">
@@ -79,7 +87,7 @@ import Layout from "@/layouts/Layout.astro";
                   </div>
                   <Book />
                 </div>
-                帮助寻找住宿
+                住宿协助
               </div>
             </a>
             <a href="/cn/services/#service5">
@@ -107,10 +115,35 @@ import Layout from "@/layouts/Layout.astro";
                   </div>
                   <Book />
                 </div>
-                从机场到住宿的帮助
+                抵达与入学引导支持
               </div>
             </a>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-12">
+      <h1 class="text-center text-3xl font-bold text-red-500">
+        为什么选择我们
+      </h1>
+      <div class="mt-2 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div class="text-center">
+          <h1 class="font-semibold">本地专业知识</h1>
+          <p>我们的团队深谙印度尼西亚的高等教育体系、文化与行政流程。</p>
+        </div>
+        <div class="text-center">
+          <h1 class="text-center font-semibold">大学合作关系</h1>
+          <p>我们与印度尼西亚多所知名大学保持紧密合作，为您提供广泛选择。</p>
+        </div>
+        <div class="text-center">
+          <h1 class="text-center font-semibold">个性化服务e</h1>
+          <p>
+            我们相信每位学生的留学旅程都是独一无二的，因此提供量身定制的指导。
+          </p>
+        </div>
+        <div class="text-center">
+          <h1 class="text-center font-semibold">全程支持</h1>
+          <p>我们承诺在您整个印尼求学旅程中，全心支持您的成功与身心福祉。</p>
         </div>
       </div>
     </div>
@@ -122,7 +155,9 @@ import Layout from "@/layouts/Layout.astro";
     <div
       class="relative z-10 container flex max-w-[736px] flex-col gap-4 md:text-lg"
     >
-      <h1 class="text-center text-3xl font-bold text-red-500">旅程的开始</h1>
+      <h1 class="text-center text-3xl font-bold text-red-400">
+        立即联系我们，开启您在印度尼西亚的未来探索之旅！
+      </h1>
       <HomeForm url={Astro.url} client:load />
     </div>
   </div>
