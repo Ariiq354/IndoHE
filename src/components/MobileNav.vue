@@ -50,23 +50,23 @@
       <SheetHeader>
         <SheetTitle>Menu</SheetTitle>
       </SheetHeader>
-      <nav className="flex flex-col gap-4 px-4">
-        <a :href="localeUrls['home']" className="border-b pb-2">
+      <nav class="flex flex-col gap-4 px-4">
+        <a :href="localeUrls['home']" class="border-b pb-2">
           {{ t("nav.home") }}
         </a>
-        <a :href="localeUrls['about']" className="border-b pb-2">
+        <a :href="localeUrls['about']" class="border-b pb-2">
           {{ t("nav.about") }}
         </a>
-        <a :href="localeUrls['services']" className="border-b pb-2">
+        <a :href="localeUrls['services']" class="border-b pb-2">
           {{ t("nav.services") }}
         </a>
-        <a :href="localeUrls['university']" className="border-b pb-2">
+        <a :href="localeUrls['university']" class="border-b pb-2">
           {{ t("nav.universities") }}
         </a>
-        <a :href="localeUrls['supports']" className="border-b pb-2">
+        <a :href="localeUrls['supports']" class="border-b pb-2">
           {{ t("nav.support") }}
         </a>
-        <a :href="localeUrls['contact']" className="border-b pb-2">
+        <a :href="localeUrls['contact']" class="border-b pb-2">
           {{ t("nav.contacts") }}
         </a>
       </nav>
