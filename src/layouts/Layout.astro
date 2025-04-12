@@ -22,10 +22,9 @@ const { title = "default" } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content="Indonesia Higher Learning Hub" />
     <title>{title}</title>
-    <ClientRouter />
   </head>
-  <Toaster client:load />
   <body>
+    <Toaster client:load />
     <Topbar />
     <main>
       <slot />
